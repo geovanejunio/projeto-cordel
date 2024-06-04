@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Passion+One:wght@400;700;900&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Exo:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Passion+One:wght@400;700;900&family=Shadows+Into+Light&display=swap');
+
+/* VARIÁVEIS CSS */
+:root{
+    --fonte001: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte002:  "Indie Flower", cursive;
+    --fonte003:  "Passion One", sans-serif;
+}
+
+/* CONFIGURAÇÕES GLOBAIS DE CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CONFIGURAÇÕES DO HTML E DO BODY  */
+html, body{
+    font-family: var(--fonte001);
+    min-height: 100vh;
+}
+
+
+/* CONFIGURAÇÕES DO CABEÇALHO */
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* CONFIGURAÇÕES DO H1 DO CABEÇALHO */
+header >h1{
+    font-family: var(--fonte003);
+    padding-top: 60px;
+    font-variant: small-caps;
+    font-size: 3.7em;
+}
+
+
+/* CONFIGURAÇÕES DO PARÁGRAFO DO CABEÇALHO */
+header >p{
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+/* CONFIGURAÇÕES DE LINKS GERAIS  */
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* CONFIGURAÇÃO DE PSEUDO-CLASSE GERAL DE LINKS */
+a :hover{
+    text-decoration: underline;
+    color: red;
+}
+
+/* CONFIGURAÇÃO GERAL DA TAG SECTION */
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte002);
+    font-weight: bolder;
+    font-size: 2.1em;
+}
+
+/* CONFIGURAÇÃO GERAL DA SECTION DA CLASSE NORMAL */
+section.normal{
+    background-color: white;
+}
+
+/* CONFIGURAÇÃO GERAL DA SECTION DA CLASSE IMAGEM */
+section.imagem{
+    background-color: darkgray;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* IDENFITIFICADOR DA IMAGEM GIRASSOL */
+#imagemgirassol{
+    background-image: url(background001.jpg);
+    background-position: right center;
+}
+/* IDENTIFICADOR DA IMAGEM LIVRO */
+#imagemlivro{
+ background-image: url(background002.jpg);
+ background-position: center center;
+}
+
+/* CONFIGURAÇÃO GERAL DO PARÁGRAFO DO SECTION DA CLASSE IMAGEM */
+section.imagem >p{
+    text-shadow: 1px 1px 0px black;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(51, 51, 51, 0.404);
+}
+
+/* CONFIGURAÇÃO DO RODAPÉ DA PÁGINA */
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
